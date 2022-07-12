@@ -1,0 +1,61 @@
+;
+;	File 'topol.top' was generated
+;	By user: Muthu (1000)
+;	On host: localhost.localdomain
+;	At date: Tue May 25 17:07:42 2021
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.3 (-:
+;	
+;	Executable:   /usr/local/gromacs/bin/gmx
+;	Data prefix:  /usr/local/gromacs
+;	Working dir:  /home/Muthu/Desktop/MD-104
+;	Command line:
+;	  gmx pdb2gmx -f pro.pdb -o prcess.pdb -ignh
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "gromos54a7.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_Protein_chain_A.itp"
+#include "topol_Protein_chain_A2.itp"
+#include "topol_Protein_chain_A3.itp"
+
+; Include ligand topology
+#include "drg.itp"
+
+; Ligand position restraints
+#ifdef POSRES
+#include "posre_UNK.itp"
+#endif
+
+; Include water topology
+#include "gromos54a7.ff/spc.itp"
+
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "gromos54a7.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_A2     1
+Protein_chain_A3     1
+UNK		1
+SOL         16610
+NA               19

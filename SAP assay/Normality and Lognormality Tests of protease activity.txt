@@ -1,0 +1,27 @@
+﻿	negative control	P21	P124	positive control
+Test for normal distribution				
+  Anderson-Darling test				
+    A2*	N too small	N too small	N too small	N too small
+    P value				
+    Passed normality test (alpha=0.05)?				
+    P value summary				
+				
+  D'Agostino & Pearson test				
+    K2	N too small	N too small	N too small	N too small
+    P value				
+    Passed normality test (alpha=0.05)?				
+    P value summary				
+				
+  Shapiro-Wilk test				
+    W	0.9339	0.9464	0.8798	0.8885
+    P value	0.5842	0.6972	0.2256	0.2668
+    Passed normality test (alpha=0.05)?	Yes	Yes	Yes	Yes
+    P value summary	ns	ns	ns	ns
+				
+  Kolmogorov-Smirnov test				
+    KS distance	0.2018	0.1536	0.2608	0.2433
+    P value	>0.1000	>0.1000	>0.1000	>0.1000
+    Passed normality test (alpha=0.05)?	Yes	Yes	Yes	Yes
+    P value summary	ns	ns	ns	ns
+				
+Number of values	7	7	7	7

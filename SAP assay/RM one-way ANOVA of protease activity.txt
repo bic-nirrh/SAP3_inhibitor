@@ -1,0 +1,20 @@
+﻿								
+Number of families	1							
+Number of comparisons per family	6							
+Alpha	0.05							
+								
+Tukey's multiple comparisons test	Mean Diff.	95.00% CI of diff.	Significant?	Summary	Adjusted P Value			
+  negative control vs. P21	160.0	132.1 to 187.9	Yes	****	<0.0001	A-B		
+  negative control vs. P124	152.9	120.4 to 185.3	Yes	****	<0.0001	A-C		
+  negative control vs. positive control	157.7	124.2 to 191.3	Yes	****	<0.0001	A-D		
+  P21 vs. P124	-7.143	-27.01 to 12.72	No	ns	0.6245	B-C		
+  P21 vs. positive control	-2.286	-26.29 to 21.72	No	ns	0.9864	B-D		
+  P124 vs. positive control	4.857	-20.55 to 30.27	No	ns	0.9077	C-D		
+								
+Test details	Mean 1	Mean 2	Mean Diff.	SE of diff.	n1	n2	q	DF
+  negative control vs. P21	218.9	58.86	160.0	8.047	7	7	28.12	6
+  negative control vs. P124	218.9	66.00	152.9	9.379	7	7	23.05	6
+  negative control vs. positive control	218.9	61.14	157.7	9.695	7	7	23.01	6
+  P21 vs. P124	58.86	66.00	-7.143	5.738	7	7	1.760	6
+  P21 vs. positive control	58.86	61.14	-2.286	6.934	7	7	0.4662	6
+  P124 vs. positive control	66.00	61.14	4.857	7.340	7	7	0.9358	6
